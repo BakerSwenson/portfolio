@@ -23,80 +23,6 @@ function setpos(element, factor) {
 }
 
 $(document).ready(function(){
-
-$("form").submit(function(e){
-    e.preventDefault();
-  });
-$('#submit').click(function(){
-    console.log('submitted');
-    validateForm();   
-});
-
-function validateForm(){
-
-    var nameReg = /^[A-Za-z]+$/;
-    var numberReg =  /^[0-9]+$/;
-    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-
-    var name = $('#fname').val();
-    var company = $('#fcompany').val();
-    var email = $('#femail').val();
-    var telephone = $('#ftelephone').val();
-    var message = $('#fidea').val();
-
-    var inputVal = new Array(name, company, email, telephone, message);
-
-    var inputMessage = new Array("name", "company", "email address", "telephone number", "message");
-        var errorCount = 0;
-        $('.error').hide();
-        if(!nameReg.test(name)){
-            $('#lname').after('<span class="error">Only letters</span>');
-            errorCount++;
-        }
-
-        if(inputVal[1] == ""){
-            $('#lcompany').after('<span class="error"> Please enter your ' + inputMessage[1] + '</span>');
-            errorCount++;
-        }
-
-        if(inputVal[2] == ""){
-            $('#lemail').after('<span class="error"> Please enter your ' + inputMessage[2] + '</span>');
-            errorCount++;
-        } 
-        else if(!emailReg.test(email)){
-            $('#lemail').after('<span class="error"> Please enter a valid email address</span>');
-            errorCount++;
-        }
-
-        if(inputVal[3] == ""){
-            $('#ltelephone').after('<span class="error"> Please enter your ' + inputMessage[3] + '</span>');
-            errorCount++;
-        } 
-        else if(!numberReg.test(telephone)){
-            $('#ltelephone').after('<span class="error"> Numbers only</span>');
-            errorCount++;
-        }
-
-        if(inputVal[4] == ""){
-            $('#lidea').after('<span class="error"> Please enter your ' + inputMessage[4] + '</span>');
-            errorCount++;
-        }       
-    if(!errorCount > 0){
-        $.ajax({
-          type: "POST",
-          url: "http://bakerswenson.com/ajax/mail",
-          data: {
-            customer: name,
-            company: company,
-            email: email,
-            telephone: telephone,
-            message: message
-          },
-          success: function(){ alert('Summited');},
-        });
-    }
-}   
-$(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -119,5 +45,4 @@ $(document).ready(function(){
       });
     } // End if
   });
-});
 });

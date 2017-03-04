@@ -1,0 +1,223 @@
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.navbar {
+ 	position: relative;
+	height: calc(20vh - 10% - 20px);
+ 	padding: 5%;
+    font-size: 20px;
+    background: white;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    
+    z-index: 99;
+    box-shadow: 0 0 18px rgba( 80, 80, 80, 0.8);
+}
+#name{
+	width: 200px;
+	float: left;
+}
+.navbar > ul{
+	width: calc(100% - 200px);
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	float: right;
+	text-align: right;
+}
+.navbar > ul > a > li{
+	display: inline-block;
+	margin: 0 25px;
+
+}
+#bio{
+    font-size: 20px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    width: 350px;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height: 200px;
+}
+#bio > p {
+    position: relative;
+    text-align: center;
+    background-color: rgba(0,0,0,.3);
+    padding: 5%;
+    border-radius: 5px;
+    border: 4px double #FFF;
+    transition: 1s;
+}
+#arrow-down{
+    font-size: 20px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    width: 100px;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height: 200px;
+}
+#service-page{
+	position: relative;
+    height: auto;
+}
+.label-container{
+    width: calc(100% - 60px);
+    height: auto;
+    padding: 10px 30px;
+    background-color: #FFFFFF;
+      background-image:
+        linear-gradient(
+          #dedede , #ffffff
+        );
+}
+.label{
+    font-size: 20px;
+}
+.label:after{
+    content: ' -';
+}
+#card-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 auto;
+    height: auto;
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    background-color: #F1f1f1;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 2px;
+}
+.card-name{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.description{
+    padding-top: 5px;
+}
+#pledge{
+    font-size: 26px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 96px;
+}
+
+#past-projects{
+}
+#past-container{
+    background-color: rgba(0,0,0,.3);
+    opacity: ;
+    width: 70%;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10vh auto;
+    padding: 5%;
+    border: 3px double #FFFFFF;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact-box{
+    width: 70%;
+    height: 300px;
+
+    margin: 0 auto;
+}
+#contact-greetings{
+    font-size: 24px;
+}
+
+.footer {
+    position: relative;
+    height: auto;
+    
+    background: white;
+    padding: 50px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    
+    z-index: 99;
+    box-shadow: 0 0 18px rgba( 80, 80, 80, 0.8);
+}
+.parallaxbox {
+    position: relative;
+    height: 85vh;
+    
+    background: #444;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+    z-index: 9;
+}
+#pb1{
+    height: 100vh;
+}
+.navbar > ul> a> li {
+  position: relative;
+  color: #222;
+  text-decoration: none;
+}
+
+.navbar > ul> a> li:hover {
+  color: #000;
+
+}
+
+.navbar > ul> a> li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar > ul> a> li:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+textarea:focus, input:focus{
+    outline: none;
+    background-color: #f1f1f1;
+
+}
+.error{
+    color: red;
+    font-weight: bold;
+    padding-left: 5px;
+}
+

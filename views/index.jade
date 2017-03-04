@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    title Welcome!
+    link(rel='stylesheet', type='text/css', href='../public/stylesheets/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet')
+    script(src='https://code.jquery.com/jquery-3.1.1.js', integrity='sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=', crossorigin='anonymous')
+  body
+    .navbar
+      #name Baker Swenson
+      ul
+        a(href='#')
+          li Services
+        a(href='#')
+          li Past Projects
+        a(href='#')
+          li Contact
+    #pb0.parallaxbox(style="background-image: url('../public/images/background2.jpg');")
+      div
+        div
+          #bio
+            p
+              | I have been working with websites for 4 years now. The process of web development excites me(concept, error handling, production). I love building a visual website from code. Powered with Node.js (backend), and Angular 2 (google's front end) to create update-to-date responsive websites.
+    #service-page
+      .label-container
+        .label Services
+      #card-container
+        .card
+          .card-name JAVASCRIPT
+          .description JFK KJKSDJ KJKDSJK JKLSDJ LKJK SJK JSKLDJ KLJ KLSJKL JJSJD lkjKJ LKJSD
+        .card
+          .card-name HTML5
+          .description JFK KJKSDJ KJKDSJK JKLSDJ LKJK SJK JSKLDJ KLJ KLSJKL JJSJD lkjKJ LKJSD
+        .card
+          .card-name CSS3
+          .description JFK KJKSDJ KJKDSJK JKLSDJ LKJK SJK JSKLDJ KLJ KLSJKL JJSJD lkjKJ LKJSD
+        .card
+          .card-name NODE.JS
+          .description JFK KJKSDJ KJKDSJK JKLSDJ LKJK SJK JSKLDJ KLJ KLSJKL JJSJD lkjKJ LKJSD
+        .card
+          .card-name REACT.JS
+          .description JFK KJKSDJ KJKDSJK JKLSDJ LKJK SJK JSKLDJ KLJ KLSJKL JJSJD lkjKJ LKJSD
+        .card
+          .card-name SOCKET.IO
+          .description JFK KJKSDJ KJKDSJK JKLSDJ LKJK SJK JSKLDJ KLJ KLSJKL JJSJD lkjKJ LKJSD
+        #pledge
+          p
+            | I make real time data-driven web applications for people, with little over 4 years expirence.
+    #pb1.parallaxbox(style="background-image: url('../public/images/background.jpg');")
+      .label-container
+        .label Past Projects
+      #past-projects
+        #past-container
+          ul
+            li
+              | Pass System (Winona Area Public Schools)
+            ul
+              li
+                | Node.js
+              li
+                | Express
+              li
+                | Html, Javascript, Css
+    #contact
+      .label-container
+        .label Contact
+      #contact-box
+        #contact-greetings Message Me!
+
+         p Email me any questions or offers @ 
+            a(href="mailto:baker.swenson@gmail.com") Here
+        
+    .footer  © 2017, from Winona, MN
+  script(type='text/javascript', src='../public/javascript/main.js')
